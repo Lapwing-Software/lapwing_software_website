@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "45NV35Z9DJ.com.lapwingsoftware.kippr",
+        "paths": [
+          "/kippr/confirmation*",
+          "/kippr/password-reset*"
+        ]
+      }
+    ]
+  }
+}

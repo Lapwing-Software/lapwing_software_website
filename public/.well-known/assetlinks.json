@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lapwingsoftware.kippr",
+      "sha256_cert_fingerprints": [
+        "B2:77:99:CA:1F:84:1F:7B:A4:C2:81:E4:B6:90:77:D2:15:E3:AA:7F:27:2D:92:31:8B:6F:CA:AB:F2:E9:9F:D2",
+        "10:14:A5:4F:77:24:68:90:89:C7:23:3A:6A:03:4C:3B:03:9D:76:CD:63:88:F7:55:60:7A:32:BC:FB:5D:85:9F",
+        "CF:69:87:00:E7:6C:48:39:AB:44:9D:88:05:53:6A:A7:FC:C7:49:93:22:30:2A:A0:93:24:45:52:9D:3D:89:49"
+      ]
+    }
+  }
+]
