@@ -8,6 +8,13 @@
           "/kippr/confirmation*",
           "/kippr/password-reset*"
         ]
+      },
+      {
+        "appID": "45NV35Z9DJ.com.lapwingsoftware.storis",
+        "paths": [
+          "/storis/confirmation*",
+          "/storis/password-reset*"
+        ]
       }
     ]
   }

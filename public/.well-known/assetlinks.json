@@ -10,5 +10,17 @@
         "CF:69:87:00:E7:6C:48:39:AB:44:9D:88:05:53:6A:A7:FC:C7:49:93:22:30:2A:A0:93:24:45:52:9D:3D:89:49"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lapwingsoftware.storis",
+      "sha256_cert_fingerprints": [
+        "C9:70:34:F2:CC:0D:2B:3A:7D:2A:18:8C:DE:6C:1A:FD:11:79:32:3F:79:0C:26:DF:A7:12:13:93:ED:EF:5C:2A",
+        "5D:5E:26:ED:53:A4:9B:13:2A:D7:08:45:66:D6:1D:AA:5E:AF:3B:DF:B8:21:6B:4C:FC:70:B0:8C:74:EE:29:E8",
+        "CF:69:87:00:E7:6C:48:39:AB:44:9D:88:05:53:6A:A7:FC:C7:49:93:22:30:2A:A0:93:24:45:52:9D:3D:89:49"
+      ]
+    }
   }
 ]
