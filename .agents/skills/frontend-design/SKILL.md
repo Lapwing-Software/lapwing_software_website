@@ -38,6 +38,7 @@ Focus on:
 - **Motion**: Use smooth CSS transitions and micro-interactions on hover and focus states. Keep motion crisp and responsive.
 - **Spatial Composition**: Modern layout with clean negative space, responsive flexbox/grid containers, and intuitive navigation.
 - **Visual Details**: Atmospheric backgrounds, subtle border-radius tokens, crisp card containers, and optimized image/graphic assets.
+- **Borders**: Do NOT use visible borders (`border`, `border-*`) on elements, cards, containers, headers, or footers unless explicitly requested by the user.
 
 NEVER use generic AI-generated aesthetics like predictable cookie-cutter patterns lacking context-specific character.
 

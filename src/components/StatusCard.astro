@@ -1,65 +1,45 @@
 ---
 const {
-  logoUrl,
-  logoAlt,
+  logoUrl = '/favicon.svg',
+  logoAlt = 'Lapwing Software',
   title,
   description,
   privacyUrl,
   termsUrl,
-  cardBg = 'bg-[#F9F9F9]',
-  textColor = 'text-[#0A0F0A]',
-  descColor = 'text-[#6E7A71]',
-  footerBg = 'bg-[#EBF5EE]',
-  footerBorder = 'border-[#6E7A711a]',
-  linkColor = 'text-[#1E914B]',
 } = Astro.props;
 ---
 
-<main
-  class='mx-auto flex min-h-[calc(100vh-5rem)] max-w-3xl items-center justify-center p-0 sm:min-h-[calc(100vh-8rem)]'
->
-  <section
-    class={`w-full max-w-xl overflow-hidden rounded-xl ${cardBg} shadow-[0_4px_12px_rgba(0,0,0,0.05)]`}
-  >
-    <div class='px-6 pt-10 sm:px-8'>
+<main class="mx-auto flex min-h-[calc(100vh-5rem)] max-w-3xl items-center justify-center p-4 sm:min-h-[calc(100vh-8rem)]">
+  <section class="w-full max-w-xl overflow-hidden rounded-3xl bg-white dark:bg-slate-900 shadow-sm transition-colors duration-300">
+    <div class="px-6 pt-10 text-center sm:px-8">
       <img
         src={logoUrl}
         alt={logoAlt}
-        width='128'
-        height='128'
-        class='mx-auto block w-24 rounded-xl sm:w-28'
+        width="64"
+        height="64"
+        class="mx-auto block w-16 h-16 rounded-2xl"
       />
     </div>
 
-    <div class='px-6 pb-4 pt-6 text-center sm:px-8'>
-      <h1
-        class={`m-0 font-heading text-3xl font-extrabold tracking-tight ${textColor} sm:text-4xl`}
-      >
+    <div class="px-6 pb-6 pt-6 text-center sm:px-8">
+      <h1 class="m-0 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
         {title}
       </h1>
 
-      <p class={`mx-auto mt-4 max-w-md text-base leading-relaxed ${descColor}`}>
+      <p class="mx-auto mt-4 max-w-md text-base leading-relaxed text-slate-600 dark:text-slate-300">
         {description}
       </p>
     </div>
 
-    <footer
-      class={`border-t ${footerBorder} ${footerBg} px-6 py-6 text-center sm:px-8`}
-    >
-      <p class={`m-0 text-xs ${descColor}`}>&copy; Lapwing Software</p>
+    <footer class="bg-slate-50 dark:bg-slate-800/50 px-6 py-6 text-center sm:px-8">
+      <p class="m-0 text-xs text-slate-500 dark:text-slate-400">&copy; Lapwing Software</p>
 
-      <p class='mt-2 text-xs'>
-        <a
-          href={privacyUrl}
-          class={`font-medium ${linkColor} no-underline hover:underline`}
-        >
+      <p class="mt-2 text-xs">
+        <a href={privacyUrl} class="font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white no-underline">
           Privacy Policy
         </a>
-        <span class={`mx-2 ${descColor}`}>|</span>
-        <a
-          href={termsUrl}
-          class={`font-medium ${linkColor} no-underline hover:underline`}
-        >
+        <span class="mx-2 text-slate-400">|</span>
+        <a href={termsUrl} class="font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white no-underline">
           Terms &amp; Conditions
         </a>
       </p>

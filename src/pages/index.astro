@@ -2,30 +2,250 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title='Lapwing Software'>
+<Layout title='Lapwing Software - Mobile & Web Applications'>
   <div
-    style='display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;'
+    class='flex-1 flex flex-col max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'
   >
-    <a
-      href='/kippr/privacy-policy'
-      style='padding: 10px 20px; background-color: #111; color: white; text-decoration: none; border-radius: 6px;'
-      >Kippr Privacy Policy</a
+    <!-- Navigation / Header -->
+    <header class='flex items-center justify-between pb-8 mb-12'>
+      <div class='flex items-center gap-3'>
+        <div
+          class='w-10 h-10 rounded-xl bg-linear-to-br from-slate-900 to-indigo-950 dark:from-indigo-600 dark:to-slate-900 flex items-center justify-center text-white shadow-md font-extrabold text-xl tracking-tight'
+        >
+          L
+        </div>
+        <span
+          class='text-xl font-bold tracking-tight text-slate-900 dark:text-white'
+          >Lapwing Software</span
+        >
+      </div>
+      <span
+        class='text-xs font-semibold px-3 py-1 bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full'
+      >
+        Apps & Software
+      </span>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class='text-center max-w-3xl mx-auto mb-16 px-4'>
+      <h1
+        class='text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight mb-6'
+      >
+        Simple, powerful mobile & web experiences
+      </h1>
+      <p
+        class='text-lg sm:text-xl text-slate-600 dark:text-slate-300 font-normal leading-relaxed'
+      >
+        Lapwing Software builds modern, intuitive applications focused on user
+        experience, reliability, and privacy.
+      </p>
+    </section>
+
+    <!-- Products Grid -->
+    <section class='grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 flex-1'>
+      <!-- Kippr Card -->
+      <div
+        class='bg-linear-to-b from-kippr/15 via-kippr/5 to-slate-100/70 dark:from-kippr/25 dark:via-kippr/10 dark:to-slate-900/90 rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300 group relative overflow-hidden'
+      >
+        <div
+          class='absolute top-0 right-0 w-36 h-36 bg-kippr/15 dark:bg-kippr/25 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110'
+        >
+        </div>
+        <div>
+          <div class='flex items-center justify-between mb-6 relative'>
+            <div
+              class='w-12 h-12 rounded-2xl bg-kippr text-white flex items-center justify-center shadow-lg shadow-kippr/30 font-bold text-2xl'
+            >
+              K
+            </div>
+            <span
+              class='text-xs font-semibold px-3 py-1 bg-kippr/15 dark:bg-kippr/25 text-kippr-dark dark:text-kippr rounded-full'
+            >
+              Smart Pantry Tracker
+            </span>
+          </div>
+
+          <h2
+            class='text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight group-hover:text-kippr transition-colors'
+          >
+            Kippr
+          </h2>
+          <p class='text-slate-600 dark:text-slate-300 leading-relaxed mb-6'>
+            Stop throwing away good food and hard-earned money! Kippr makes
+            kitchen management effortless with real-time pantry tracking, AI
+            barcode and receipt scanning, and instant background synchronization
+            across shared household lists without manual reloads.
+          </p>
+
+          <div class='flex flex-wrap gap-2 mb-8'>
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >Pantry Tracking</span
+            >
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >Expiration Alerts</span
+            >
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >AI Barcode & Receipt Scan</span
+            >
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >Real-Time Sync (No Reloads)</span
+            >
+          </div>
+        </div>
+
+        <div class='pt-6 flex flex-wrap gap-3'>
+          <a
+            href='/kippr/privacy-policy'
+            class='text-xs font-semibold px-4 py-2 bg-kippr text-white rounded-full hover:bg-kippr-dark transition-colors shadow-sm no-underline'
+          >
+            Privacy Policy
+          </a>
+          <a
+            href='/kippr/terms-and-conditions'
+            class='text-xs font-semibold px-4 py-2 bg-white/90 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-800 rounded-full transition-colors no-underline shadow-2xs'
+          >
+            Terms & Conditions
+          </a>
+        </div>
+      </div>
+
+      <!-- Storis Card -->
+      <div
+        class='bg-linear-to-b from-storis/15 via-storis/5 to-slate-100/70 dark:from-storis/25 dark:via-storis/10 dark:to-slate-900/90 rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300 group relative overflow-hidden'
+      >
+        <div
+          class='absolute top-0 right-0 w-36 h-36 bg-storis/15 dark:bg-storis/25 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110'
+        >
+        </div>
+        <div>
+          <div class='flex items-center justify-between mb-6 relative'>
+            <div
+              class='w-12 h-12 rounded-2xl bg-storis text-white flex items-center justify-center shadow-lg shadow-storis/30 font-bold text-2xl'
+            >
+              S
+            </div>
+            <span
+              class='text-xs font-semibold px-3 py-1 bg-storis/15 dark:bg-storis/25 text-storis-dark dark:text-storis rounded-full'
+            >
+              Mobile App
+            </span>
+          </div>
+
+          <h2
+            class='text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight group-hover:text-storis transition-colors'
+          >
+            Storis
+          </h2>
+          <p class='text-slate-600 dark:text-slate-300 leading-relaxed mb-6'>
+            An interactive mobile story reading app featuring offline libraries,
+            AI story generation, and progress tracking.
+          </p>
+
+          <div class='flex flex-wrap gap-2 mb-8'>
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >Offline Reading</span
+            >
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >AI Generation</span
+            >
+            <span
+              class='text-xs font-medium px-2.5 py-1 bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 rounded-md shadow-2xs'
+              >Story Library</span
+            >
+          </div>
+        </div>
+
+        <div class='pt-6 flex flex-wrap gap-3'>
+          <a
+            href='/storis/privacy-policy'
+            class='text-xs font-semibold px-4 py-2 bg-storis text-white rounded-full hover:bg-storis-dark transition-colors shadow-sm no-underline'
+          >
+            Privacy Policy
+          </a>
+          <a
+            href='/storis/terms-and-conditions'
+            class='text-xs font-semibold px-4 py-2 bg-white/90 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-800 rounded-full transition-colors no-underline shadow-2xs'
+          >
+            Terms & Conditions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class='pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400'
     >
-    <a
-      href='/kippr/terms-and-conditions'
-      style='padding: 10px 20px; background-color: #111; color: white; text-decoration: none; border-radius: 6px;'
-      >Kippr Terms & Conditions</a
-    >
-    <a
-      href='/storis/privacy-policy'
-      style='padding: 10px 20px; background-color: #111; color: white; text-decoration: none; border-radius: 6px;'
-      >Storis Privacy Policy</a
-    >
-    <a
-      href='/storis/terms-and-conditions'
-      style='padding: 10px 20px; background-color: #111; color: white; text-decoration: none; border-radius: 6px;'
-      >Storis Terms & Conditions</a
-    >
+      <div>
+        © 2026 Lapwing Software (Franciszek Czajka). All rights reserved.
+      </div>
+      <div class='flex items-center gap-4 flex-wrap'>
+        <a
+          href='/kippr/privacy-policy'
+          class='hover:text-slate-900 dark:hover:text-white transition-colors no-underline'
+          >Kippr Privacy</a
+        >
+        <a
+          href='/kippr/terms-and-conditions'
+          class='hover:text-slate-900 dark:hover:text-white transition-colors no-underline'
+          >Kippr Terms</a
+        >
+        <a
+          href='/storis/privacy-policy'
+          class='hover:text-slate-900 dark:hover:text-white transition-colors no-underline'
+          >Storis Privacy</a
+        >
+        <a
+          href='/storis/terms-and-conditions'
+          class='hover:text-slate-900 dark:hover:text-white transition-colors no-underline'
+          >Storis Terms</a
+        >
+
+        <!-- Theme Switcher Button -->
+        <button
+          id='theme-toggle'
+          type='button'
+          aria-label='Toggle light and dark theme'
+          class='inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors font-medium cursor-pointer ml-2'
+        >
+          <!-- Sun Icon (shown in light mode) -->
+          <svg
+            id='theme-toggle-sun-icon'
+            class='w-3.5 h-3.5 block dark:hidden text-amber-500 fill-current'
+            viewBox='0 0 20 20'
+          >
+            <path
+              fill-rule='evenodd'
+              d='M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 2.78a1 1 0 011.415 0l.707.707a1 1 0 01-1.414 1.415l-.708-.707a1 1 0 010-1.415zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zm-2.78 4.22a1 1 0 010 1.415l-.707.707a1 1 0 01-1.415-1.414l.707-.708a1 1 0 011.415 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zm-4.22-2.78a1 1 0 01-1.415 0l-.707-.707a1 1 0 011.414-1.415l.708.707a1 1 0 010 1.415zM2 10a1 1 0 011-1h1a1 1 0 110 2H3a1 1 0 01-1-1zm2.78-4.22a1 1 0 010-1.415l.707-.707a1 1 0 011.415 1.414l-.707.708a1 1 0 01-1.415 0zM10 6a4 4 0 100 8 4 4 0 000-8z'
+              clip-rule='evenodd'></path>
+          </svg>
+          <!-- Moon Icon (shown in dark mode) -->
+          <svg
+            id='theme-toggle-moon-icon'
+            class='w-3.5 h-3.5 hidden dark:block text-indigo-400 fill-current'
+            viewBox='0 0 20 20'
+          >
+            <path
+              d='M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z'
+            ></path>
+          </svg>
+          <span id='theme-toggle-text'>Theme</span>
+        </button>
+      </div>
+    </footer>
   </div>
-  <h1>welcome to Lapwing Software</h1>
+
+  <script is:inline>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
 </Layout>
